@@ -1,50 +1,41 @@
 # Juan Pablo Gaviria
 
-Backend and platform engineer building systems for the parts of production that do not forgive wishful thinking.
+Backend and platform engineer.
 
-Over 7+ years, I have designed and shipped multiple production platforms in Go/Golang, Rust, Python, and TypeScript across payments, identity, real-time operations, AI infrastructure, and internal developer tooling. My work sits at the intersection of distributed systems, platform engineering, and high-integrity software architecture, where the architecture document and the running system are expected to agree.
+I build systems for the parts of production that do not forgive wishful thinking: distributed backends, control planes, operational tooling, and AI infrastructure that still need to make sense when load, failure, and real-world constraints show up at the same time.
 
-I do not just implement features and hand them off. I own the shape of the system: service boundaries, data contracts, async topology, deployment posture, release gates, and the observability needed to know something is wrong before customers tell you.
+Over 7+ years, I have designed and shipped multiple production platforms in Go/Golang, Rust, Python, and TypeScript across payments, identity, real-time operations, internal developer tooling, and MLOps-heavy systems. I care about clear contracts, honest runtime behavior, and architecture that can survive both production and review.
 
 ## Current Focus
 
-`Go/Golang` `Rust` `Python` `TypeScript`
-
+`Go/Golang` `Rust` `Python` `TypeScript`  
 `Distributed Systems` `Platform Engineering` `Software Architecture` `AI Infrastructure` `MLOps` `Observability`
 
-## Selected Public Work
+## Selected Work
 
 ### [credit-ai-ops-platform](https://github.com/JuanPabloGaviria/credit-ai-ops-platform)
 
 Bank-grade AI operations platform for explainable credit decisions, model governance, observability, and supply-chain security.
 
-What it demonstrates:
-- multi-service backend architecture
-- production-oriented MLOps lifecycle controls
-- signed model artifacts and supply-chain hardening
-- audit-grade observability and verification discipline
+Eight-service backend architecture, production-oriented MLOps lifecycle controls, signed model artifacts, supply-chain hardening, and audit-grade observability. Built for systems that have to survive compliance scrutiny, not just a product demo.
 
 ### [golden-path-control-plane](https://github.com/JuanPabloGaviria/golden-path-control-plane)
 
 Go-based internal developer platform control plane for service onboarding, readiness evaluation, deployment gating, and observability-backed golden-path enforcement.
 
-What it demonstrates:
-- Go platform engineering
-- authenticated control-plane APIs
-- async worker orchestration
-- release-readiness and deployment gating workflows
+Focused on authenticated control-plane APIs, async worker orchestration, explicit release-readiness workflows, and cloud-native proof paths without architecture theater.
 
-## How I Build
+## Engineering Taste
 
 - Clear contracts over hidden magic
 - Verification gates that block, not warn
-- Observable runtime behavior from day one
-- Small systems with real proof over impressive diagrams with fake claims
+- Observable systems from day one
+- Small systems with real proof over large diagrams with fake certainty
 - Documentation that engineers and reviewers can both trust
 
 ## Interested In
 
-I am especially interested in backend, platform, and software architecture work around:
+Backend, platform, and software architecture work around:
 
 - distributed systems
 - internal developer platforms
