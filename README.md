@@ -1,10 +1,10 @@
-# Juan Pablo Gaviria
+# Building Systems That Survive Production
 
-`Backend / Platform Engineer`
+Backend / platform engineer working across `Go/Golang`, `Rust`, `Python`, and `TypeScript`.
 
-I build distributed systems, internal platforms, and AI infrastructure that still need to make sense when production gets adversarial: real load, asynchronous failure, external dependencies, and reviewers who actually read the details.
+I build distributed systems, internal platforms, and AI infrastructure for the parts of production that do not forgive wishful thinking: asynchronous failure, external dependencies, and reviewers who actually read the details.
 
-Over 7+ years, I have designed and shipped production systems in `Go/Golang`, `Rust`, `Python`, and `TypeScript` across payments, identity, real-time operations, internal developer tooling, and MLOps-heavy backends.
+Over 7+ years, I have designed and shipped production systems across payments, identity, real-time operations, internal developer tooling, and MLOps-heavy backends.
 
 ## Representative Public Systems
 
@@ -40,7 +40,6 @@ Go-based internal developer platform control plane for service onboarding, readi
 ## Contact
 
 - [LinkedIn](https://linkedin.com/in/jpgaviria)
-- [GitHub](https://github.com/JuanPabloGaviria)
 
 Remote preferred. Open to relocation for exceptional opportunities.
 
