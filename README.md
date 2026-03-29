@@ -1,41 +1,49 @@
-# Building Systems That Survive Production
+# Systems For The Parts Of Production That Do Not Forgive Wishful Thinking
 
-Backend / platform engineer working across `Go/Golang`, `Rust`, `Python`, and `TypeScript`.
+Backend and platform engineer working across Go, Rust, Python, and TypeScript.
 
-I build distributed systems, internal platforms, and AI infrastructure for the parts of production that do not forgive wishful thinking: asynchronous failure, external dependencies, and reviewers who actually read the details.
+My work centers on systems that have to remain explainable under stress: asynchronous processing, delivery guarantees, control planes, model governance, audit reconstruction, and the operational edges where architecture review stops being theoretical.
 
-Over 7+ years, I have designed and shipped production systems across payments, identity, real-time operations, internal developer tooling, and MLOps-heavy backends.
+## Flagship Systems
 
-## Representative Public Systems
+| System | Thesis | Stack |
+| --- | --- | --- |
+| [credit-ai-ops-platform](https://github.com/JuanPabloGaviria/credit-ai-ops-platform) | Credit decisioning should be treated as a governed operational system, not a model-serving demo. | Python, FastAPI, RabbitMQ, PostgreSQL, MLOps |
+| [golden-path-control-plane](https://github.com/JuanPabloGaviria/golden-path-control-plane) | Release readiness is a control-plane problem with durable evidence, not a spreadsheet ritual. | Go, PostgreSQL, OIDC/JWKS, Docker, Kubernetes |
+| [event-fabric-rs](https://github.com/JuanPabloGaviria/event-fabric-rs) | Event delivery becomes credible when ingest, retries, replay, dead letters, and realtime fanout are all made explicit. | Rust, axum, tokio, PostgreSQL, SSE, webhooks |
 
-### [credit-ai-ops-platform](https://github.com/JuanPabloGaviria/credit-ai-ops-platform)
+## What These Repositories Show
 
-Bank-grade AI operations platform for explainable credit decisions, model governance, observability, and supply-chain security.
+- distributed systems built around failure handling, not just happy-path throughput
+- explicit contracts, persistence semantics, and verifiable runtime boundaries
+- platform and infrastructure judgment without microservice theater
+- documentation written to survive review against the running system
+- proof surfaces that can be rerun locally instead of being defended with screenshots
 
-- Eight-service backend around credit decisioning, governance, and auditability
-- Event-driven topology with outbox, DLQ, replay, idempotency, and fault-isolation patterns
-- Signed model artifacts, SBOM, digest-pinned images, and audit-grade observability
+## Systems Map
 
-### [golden-path-control-plane](https://github.com/JuanPabloGaviria/golden-path-control-plane)
-
-Go-based internal developer platform control plane for service onboarding, readiness evaluation, deployment gating, and observability-backed golden-path enforcement.
-
-- Authenticated control-plane APIs and async worker orchestration
-- Explicit release-readiness workflows and deployment gating
-- Cloud-native proof paths designed to demonstrate behavior, not architecture theater
-
-## What I Optimize For
-
-- explicit contracts
-- observable failure
-- verification gates that block
-- durable runtime boundaries
-- documentation that matches the running system
+```mermaid
+flowchart LR
+  Credit["credit-ai-ops-platform<br/>governed AI decisioning"] --> Core["production systems judgment"]
+  Control["golden-path-control-plane<br/>platform control and deployment gating"] --> Core
+  Fabric["event-fabric-rs<br/>delivery semantics and realtime data plane"] --> Core
+```
 
 ## Current Focus
 
-`Distributed Systems` `Platform Engineering` `Software Architecture`  
-`AI Infrastructure` `MLOps` `Observability` `Payments` `Identity`
+- distributed systems
+- platform engineering
+- AI infrastructure and MLOps
+- observability and operational resilience
+- payment, identity, and event-driven backend design
+
+## Working Style
+
+- fail fast on invalid assumptions
+- keep contracts explicit
+- treat auditability and observability as runtime features
+- prefer narrow, defensible claims over inflated breadth
+- optimize for systems that can survive technical scrutiny
 
 ## Contact
 
