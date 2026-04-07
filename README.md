@@ -1,56 +1,40 @@
-# Systems For The Parts Of Production That Do Not Forgive Wishful Thinking
+# Juan Pablo Gaviria
 
-Backend and platform engineer working across Go, Rust, Python, and TypeScript.
+Backend and platform engineer focused on distributed systems, payments, and production AI infrastructure.
 
-My work centers on systems that have to remain explainable under stress: asynchronous processing, delivery guarantees, control planes, model governance, audit reconstruction, and the operational edges where architecture review stops being theoretical.
+7+ years building systems where correctness, failure handling, and operational visibility are first-class concerns: $10M+ in payment flows, zero double-charge incidents across production lifetime, and production LLM evaluation infrastructure built around golden datasets, dual LLM judges, CI integration, and AI-assisted root cause analysis.
 
-## Flagship Systems
+My main public work is below.
 
-| System | Thesis | Stack |
-| --- | --- | --- |
-| [credit-ai-ops-platform](https://github.com/JuanPabloGaviria/credit-ai-ops-platform) | Credit decisioning should be treated as a governed operational system, not a model-serving demo. | Python, FastAPI, RabbitMQ, PostgreSQL, MLOps |
-| [golden-path-control-plane](https://github.com/JuanPabloGaviria/golden-path-control-plane) | Release readiness is a control-plane problem with durable evidence, not a spreadsheet ritual. | Go, PostgreSQL, OIDC/JWKS, Docker, Kubernetes |
-| [event-fabric-rs](https://github.com/JuanPabloGaviria/event-fabric-rs) | Event delivery becomes credible when ingest, retries, replay, dead letters, and realtime fanout are all made explicit. | Rust, axum, tokio, PostgreSQL, SSE, webhooks |
+## Flagship Repositories
 
-## What These Repositories Show
+| Repository | What it shows | Stack |
+|---|---|---|
+| [credit-ai-ops-platform](https://github.com/JuanPabloGaviria/credit-ai-ops-platform) | Governed AI decisioning with auditability, async orchestration, and production-facing controls rather than demo-layer model serving. Verified by a 173-test suite. | Python · FastAPI · RabbitMQ · PostgreSQL |
+| [golden-path-control-plane](https://github.com/JuanPabloGaviria/golden-path-control-plane) | Platform control plane for release readiness, deployment gating, and durable evidence around production safety. | Go · PostgreSQL · OIDC/JWKS · Docker · Kubernetes |
+| [event-fabric-rs](https://github.com/JuanPabloGaviria/event-fabric-rs) | Explicit delivery semantics for ingest, retries, replay, dead-letter recovery, webhooks, and real-time fanout. | Rust · axum · tokio · PostgreSQL · SSE |
 
-- distributed systems built around failure handling, not just happy-path throughput
-- explicit contracts, persistence semantics, and verifiable runtime boundaries
-- platform and infrastructure judgment without microservice theater
-- documentation written to survive review against the running system
-- proof surfaces that can be rerun locally instead of being defended with screenshots
+## What This Work Optimizes For
 
-## Systems Map
-
-```mermaid
-flowchart LR
-  Credit["credit-ai-ops-platform<br/>governed AI decisioning"] --> Core["production systems judgment"]
-  Control["golden-path-control-plane<br/>platform control and deployment gating"] --> Core
-  Fabric["event-fabric-rs<br/>delivery semantics and realtime data plane"] --> Core
-```
-
-## Current Focus
-
-- distributed systems
-- platform engineering
-- AI infrastructure and MLOps
-- observability and operational resilience
-- payment, identity, and event-driven backend design
+- Distributed systems built around failure handling, not just happy-path throughput
+- Explicit contracts, persistence semantics, and verifiable runtime boundaries
+- Platform decisions that reduce repeated engineering mistakes across teams
+- Observability and auditability as runtime requirements, not afterthoughts
+- Documentation that holds up against implementation review
 
 ## Working Style
 
-- fail fast on invalid assumptions
-- keep contracts explicit
-- treat auditability and observability as runtime features
-- prefer narrow, defensible claims over inflated breadth
-- optimize for systems that can survive technical scrutiny
+- Make tradeoffs explicit before they become incidents
+- Keep contracts narrow and defensible
+- Fail fast on invalid assumptions
+- Build evaluation infrastructure before shipping AI into production
+- Optimize for systems that remain understandable under pressure
 
-## Contact
+## Currently Interested In
 
-- [LinkedIn](https://linkedin.com/in/jpgaviria)
+Distributed systems · Payments infrastructure · Production AI reliability · Platform engineering · Release discipline and observability
 
-Remote preferred. Open to relocation for exceptional opportunities.
+Open to Staff and Senior Backend / Platform roles at companies where correctness actually matters.
 
----
-
-*Tempus Edax Rerum*
+→ [LinkedIn](https://linkedin.com/in/jpgaviria)
+→ juangav@protonmail.com
