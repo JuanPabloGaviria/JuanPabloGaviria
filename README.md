@@ -1,57 +1,53 @@
 # Juan Pablo Gaviria
 
-Backend and platform engineer focused on distributed systems, payments infrastructure, platform control planes, and production AI reliability.
+I build backend and platform infrastructure for systems where failure has real consequences.
 
-I build production systems where correctness, failure handling, auditability, and operational visibility are treated as runtime requirements, not afterthoughts.
+My work sits across distributed systems, payments infrastructure, production AI reliability, release safety, and platform control planes. Environments where money, state, trust, and operational control must survive real production pressure.
 
-Over the years, I have worked on systems involving $10M+ in payment flows, zero double-charge incidents across production lifetime, and production LLM evaluation infrastructure built around golden datasets, dual LLM judges, CI integration, and AI-assisted root cause analysis.
+I have built and operated systems involving $10M+ in payment flows, with zero double-charge incidents across production lifetime. I have also built production LLM evaluation infrastructure using golden datasets, dual LLM judges, CI integration, regression checks, and AI-assisted root cause analysis.
 
-My public work is designed to demonstrate the same engineering principles I care about in production: explicit contracts, durable state, controlled failure modes, release discipline, auditability, and systems that remain understandable under pressure.
+The throughline in my work is simple: systems should fail visibly, recover deliberately, preserve evidence, and remain controllable when pressure rises.
 
-## Flagship Repositories
+## Public Systems
 
-| Repository                                                                                 | What it demonstrates                                                                                                                                                                              | Stack                                             |
-| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
-| [credit-ai-ops-platform](https://github.com/JuanPabloGaviria/credit-ai-ops-platform)       | Governed AI decisioning with auditability, asynchronous orchestration, production-facing controls, and operational boundaries rather than demo-layer model serving. Verified by a 173-test suite. | Python · FastAPI · RabbitMQ · PostgreSQL          |
-| [golden-path-control-plane](https://github.com/JuanPabloGaviria/golden-path-control-plane) | Platform control plane for release readiness, deployment gating, policy enforcement, and durable evidence around production safety.                                                               | Go · PostgreSQL · OIDC/JWKS · Docker · Kubernetes |
-| [event-fabric-rs](https://github.com/JuanPabloGaviria/event-fabric-rs)                     | Event infrastructure with explicit delivery semantics for ingest, retries, replay, dead-letter recovery, webhooks, and real-time fanout.                                                          | Rust · axum · tokio · PostgreSQL · SSE            |
+| Repository                                                                                 | System Thesis                                                                                                                                          | Stack                                             |
+| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------- |
+| [credit-ai-ops-platform](https://github.com/JuanPabloGaviria/credit-ai-ops-platform)       | AI decisioning should be governed, auditable, testable, and operationally reviewable before it is trusted in production. Verified by a 173-test suite. | Python · FastAPI · RabbitMQ · PostgreSQL          |
+| [golden-path-control-plane](https://github.com/JuanPabloGaviria/golden-path-control-plane) | Release safety should be enforced through control planes, gates, policy checks, and durable production evidence — not left to coordination rituals.    | Go · PostgreSQL · OIDC/JWKS · Docker · Kubernetes |
+| [event-fabric-rs](https://github.com/JuanPabloGaviria/event-fabric-rs)                     | Event infrastructure should make delivery, retry, replay, recovery, dead-letter handling, webhooks, and fanout explicit instead of accidental.         | Rust · axum · tokio · PostgreSQL · SSE            |
 
-## Engineering Focus
+## Systems I Care About
 
-* Distributed systems designed around failure handling, recovery paths, and operational correctness
-* Payments infrastructure where idempotency, state transitions, reconciliation, and audit trails matter
-* Platform control planes that reduce repeated engineering mistakes across teams
-* Production AI infrastructure with evaluation, regression detection, and traceable decision quality
-* Release discipline, deployment gates, runtime evidence, and observability
-* Explicit contracts, persistence semantics, and defensible system boundaries
-* Backend systems that remain understandable during incidents, reviews, and high-pressure execution
+* Payment flows where idempotency, reconciliation, state transitions, and auditability protect real money
+* Distributed systems where failure handling is designed before the happy path is celebrated
+* Platform control planes that turn operational discipline into reusable infrastructure
+* AI systems where evaluation, regression detection, and decision traceability exist before production trust
+* Release systems where deployment risk is visible, gated, evidenced, and reviewable
+* Event-driven systems with explicit delivery guarantees, persistence semantics, and recovery paths
+* Backend infrastructure where invalid states, silent failures, and unclear ownership are treated as design failures
 
-## What I Optimize For
+## Operating Principles
 
-* Correctness before cleverness
-* Clear runtime contracts
-* Controlled failure modes
-* Durable operational evidence
-* Narrow, enforceable system boundaries
-* Evaluation infrastructure before production AI rollout
-* Engineering leverage across teams, not just local implementation speed
+* Failure is part of the design surface
+* Correctness matters most when the system carries money, state, trust, or authority
+* Runtime contracts should be narrow, explicit, and enforceable
+* Operational visibility is a requirement, not a dashboard afterthought
+* Production systems need evidence, not vibes
+* AI systems need evaluation infrastructure before they earn autonomy
+* Platforms should reduce repeated mistakes across teams
+* Systems should be diagnosable, controllable, and recoverable under pressure
 
-## Working Style
+## Engineering Posture
 
-* Make tradeoffs explicit before they become production incidents
-* Design narrow contracts and enforceable boundaries
-* Treat invalid assumptions as failure modes, not edge cases
-* Build systems that can be reasoned about during pressure
-* Prefer boring reliability over fragile novelty
-* Document decisions in a way that holds up against implementation review
+I prefer infrastructure that is boring where it should be boring, strict where it must be strict, and explicit where ambiguity would become production risk.
 
-## Currently Interested In
+I care about architecture that survives implementation, documentation that survives ownership transfer, and systems that can still be reasoned about during incidents.
 
-Staff and Principal Backend / Platform Engineering roles involving:
+I am most interested in Staff and Principal Backend / Platform Engineering roles involving:
 
-Distributed systems · Payments infrastructure · Production AI reliability · Platform engineering · Control planes · Release safety · Observability · Operational correctness
+Distributed systems · Payments infrastructure · Production AI reliability · Platform engineering · Control planes · Release safety · Observability · Operational correctness · Mission-critical backend infrastructure
 
-Open to companies where correctness, reliability, and production discipline actually matter.
+Open to companies where correctness failures are expensive, reliability is strategic, and production discipline is non-negotiable.
 
 → [LinkedIn](https://linkedin.com/in/jpgaviria)
 → [juangav@protonmail.com](mailto:juangav@protonmail.com)
