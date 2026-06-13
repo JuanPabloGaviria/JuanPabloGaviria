@@ -2,7 +2,7 @@
 
 Backend and platform engineer focused on distributed systems, payments infrastructure, platform control planes, and production AI reliability.
 
-I build production systems where correctness, failure handling, auditability, and operational visibility are treated as runtime requirements — not afterthoughts.
+I build production systems where correctness, failure handling, auditability, and operational visibility are treated as runtime requirements and not afterthoughts.
 
 Over 7+ years, I have worked on systems involving $10M+ in payment flows, zero double-charge incidents across production lifetime, and production LLM evaluation infrastructure built around golden datasets, dual LLM judges, CI integration, and AI-assisted root cause analysis.
 
